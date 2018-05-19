@@ -8,15 +8,14 @@ An AI for Pocket Tanks
 1. Make sure that your tank is cyan and the other one is orange.
 1. Run the script "PocketTanksAgent.py"
 1. You'll be asked to enter the values of 3 things
-  * Speed hack factor, I used Cheat Engine to make the game faster, particularly useful when gathering data from the game. If you use speed hack as well, it's necessary to enter it in the program at the beginning to synchronize the timing between the program and the game. If you don't use it, just enter 1.
-  * The angle currently displayed in the game, that will be updated by the program.
-  * The in game power.
+   * Speed hack factor, I used Cheat Engine to make the game faster, particularly useful when gathering data from the game. If you use speed hack as well, it's necessary to enter it in the program at the beginning to synchronize the timing between the program and the game. If you don't use it, just enter 1.
+   * The angle currently displayed in the game, that will be updated by the program.
+   * The in game power.
 1. Press Enter and switch to the game, the agent should start playing.
 
 
 ## File breakdown :
 --------
-
 File | Discription
 --- | ---
 OpenCV.py | Contains OpenCV based functions which detect tanks coordinates, projectile coordinates and world shape features
