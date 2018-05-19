@@ -17,24 +17,12 @@ An AI for Pocket Tanks
 ## File breakdown :
 --------
 
-
-a | b
---- | ---
-a | a
-a | a
-a | a
-a | a
-a | a
-
-
-
 File | Discription
 --- | ---
 OpenCV.py | Contains OpenCV based functions which detect tanks coordinates, projectile coordinates and world shape features
 PocketTanksAgent.py | Starts the agent
 PocketTanksAgent.sln | Visual Studio Solution
 Variables.py | Contains global variables used by both PocketTanksAgent.py and DataGathering.py
-
 data.csv	| Contains data I collected from the game 
 dataGathering.py | Generates random values and collects results, updates data.csv
 keyboard.py	| Contains keyboard related functions, responsible for updating ingame power and angle
