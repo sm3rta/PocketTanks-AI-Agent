@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{e92cf383-ff6e-4758-87dd-f029b4634296}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>dataGathering.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="tank_blue.png" />
+    <Content Include="tank_blue3.png" />
+    <Content Include="tank_yellow.png" />
+    <Content Include="tank_yellow3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dataGathering.py" />
+    <Compile Include="Variables.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenCV.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PocketTanksAgent.py" />
+    <Compile Include="training.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
