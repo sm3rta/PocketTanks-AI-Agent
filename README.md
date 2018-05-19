@@ -1,6 +1,6 @@
 # PocketTanks-AI-Agent
 An AI for Pocket Tanks
-##How to use:
+## How to use :
 1. Install necessary dependencies, in requirements.txt.
 1. Open PocketTanks.exe.
 1. Make sure the only weapon that can be used is "Single Shot" in options.
@@ -14,9 +14,11 @@ An AI for Pocket Tanks
 1. Press Enter and switch to the game, the agent should start playing.
 
 
-##File breakdown
+## File breakdown :
+--------
+
 File | Discription
----- | -----------
+----
 OpenCV.py	| Contains OpenCV based functions which detect tanks coordinates, projectile coordinates and world shape features
 PocketTanksAgent.py | Starts the agent
 PocketTanksAgent.sln | Visual Studio Solution
