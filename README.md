@@ -15,7 +15,6 @@ An AI for Pocket Tanks
 
 
 ## File breakdown :
---------
 File | Discription
 --- | ---
 OpenCV.py | Contains OpenCV based functions which detect tanks coordinates, projectile coordinates and world shape features
@@ -32,3 +31,13 @@ tank_blue3.png	| Blue tank template for template matching
 tank_yellow.png	| Yellow tank template for feature matching
 tank_yellow3.png	| Yellow tank template for template matching
 training.py | Creates a neural network, trains it and saves the model to model.h5
+
+
+## Model Features :
+Name | Discription
+--- | ---
+deltaX and deltaY | horizontal and vertical distances between the two tanks
+w0 to w19 | Highest point y value in 20 divisions of the screen
+worldLowestAngle | The highest angle of all the angles between the two tanks and every co-ordinate of the world's highest points ![alt text](https://github.com/sm3rta/PocketTanks-AI-Agent/blob/master/worldLowestAngleDemo.png "worldLowestAngleDemo")
+distanceX and distanceX | horizontal and vertical distances between the projectile when it hit the ground (or the tank) and the other tank
+power and angle | The power and angle used in this situation that resulted in distanceX and distanceY
